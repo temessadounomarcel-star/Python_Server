@@ -7,6 +7,12 @@ class Settings(BaseSettings):
     app_env: str = "development"
     host: str = "127.0.0.1"
     port: int = 8080
+    
+    db_host: str = "localhost"
+    db_port: int = 3306
+    db_name: str 
+    db_username: str  
+    db_password: str 
 
     model_config = SettingsConfigDict(
         env_file=".env",

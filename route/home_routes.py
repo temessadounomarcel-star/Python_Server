@@ -2,6 +2,7 @@
 from fastapi import APIRouter, Request, Response
 from config import settings
 from controllers import home_controller
+
 router = APIRouter()
 
 controller = home_controller.HomeController()
